@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine
 from app import models
-from app.routers import auth, products, cart, orders, ai
+from app.routers import auth, products, cart, orders,
 
 # Create all tables
 models.Base.metadata.create_all(bind=engine)
@@ -27,7 +27,7 @@ app.include_router(auth.router)
 app.include_router(products.router)
 app.include_router(cart.router)
 app.include_router(orders.router)
-app.include_router(ai.router)
+
 
 
 @app.get("/", tags=["Health"])
