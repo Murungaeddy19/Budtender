@@ -45,7 +45,7 @@ export default function Budtender() {
   const [toast, setToast] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const chatEndRef = useRef(null);
-  const API = "https://budtender-3f61.onrender.com";
+  const API = "https://budtender-production.up.railway.app";
   const INVITE_CODE = "BUDT2024";
 
   const fetchProducts = async () => {
